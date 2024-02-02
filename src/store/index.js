@@ -1,14 +1,14 @@
 import { legacy_createStore } from "redux";
 
 const counterReducer = (state = { counter: 0 }, action) => {
-  if (action.type === "increment") {
+  if (action.type === "increment5") {
     return {
-      counter: state.counter + 1,
+      counter: state.counter + 5,
     };
   }
-  if (action.type === "decrement") {
+  if (action.type === "decrement5") {
     return {
-      counter: state.counter - 1,
+      counter: state.counter - 5,
     };
   }
   if (action.type === "incrementby2") {
